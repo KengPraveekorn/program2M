@@ -1,0 +1,4143 @@
+[
+    {
+        "id": "a0c34420c9f8488f",
+        "type": "tab",
+        "label": "Get Value  and Calculate to  Database",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6f7d57e6ee4e2c12",
+        "type": "tab",
+        "label": "IpAddr v5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3f8ad1f7b530d82c",
+        "type": "group",
+        "z": "a0c34420c9f8488f",
+        "name": "INPUT VISION",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "d25ddfbb37f9719b",
+            "f59236394fe7dc24",
+            "0f8072a331e35287",
+            "078a5b634f9f2985",
+            "826430ae5375cea4",
+            "fbb3ed801cc6c60c"
+        ],
+        "x": 194,
+        "y": 39,
+        "w": 1112,
+        "h": 82
+    },
+    {
+        "id": "21b39faf1b274f51",
+        "type": "group",
+        "z": "a0c34420c9f8488f",
+        "name": "INPUT MACHINE MONITOR",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffefbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "c0373cc94a0efc35",
+            "5cd7c1146b73a84f",
+            "e0ee1c95edac6b27",
+            "e4237290b354ea44",
+            "c6c0321ef7dd9c6a",
+            "4da2d6ce993cb2b5",
+            "e4c33e98fcfaa687",
+            "2266034f090b0505",
+            "b83748829308f9d3",
+            "63fdaa40347505d5",
+            "1bd0c124d96c7189",
+            "6c370482e12a9285",
+            "3c7512970c06e773",
+            "f2959fa0c16503a8",
+            "8ef049f4041f8930"
+        ],
+        "x": 94,
+        "y": 339,
+        "w": 1332,
+        "h": 242
+    },
+    {
+        "id": "742f18b7e61775ac",
+        "type": "group",
+        "z": "a0c34420c9f8488f",
+        "name": "SELECT DATABASE",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#dbcbe7",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "0e07b0fad5694ac3",
+            "ce2a73423d7e2629",
+            "578ab7e924c9df2e",
+            "236bf299b9e680fa",
+            "7545dfe3c7a56d76",
+            "43e45d0ab26b49bd",
+            "f27d5b723d51c608",
+            "8b4b352fd73edf74",
+            "119eea5c949a6cf4",
+            "32a1131ec020d122",
+            "455cf7a83418cc0f",
+            "bf770182a35fa33b"
+        ],
+        "x": 154,
+        "y": 819,
+        "w": 1232,
+        "h": 142
+    },
+    {
+        "id": "5a645172926914f1",
+        "type": "group",
+        "z": "a0c34420c9f8488f",
+        "name": "CALCULATE AND INSERT TO DATABASE",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#bfbfbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4398926dbdc16874",
+            "794aecd6e60d51a0",
+            "5fd14be9039dd847",
+            "cb0dc95afcd8e5f4",
+            "3f526f1544ca2ece",
+            "61d360ede71c8fd7",
+            "21b26fbf354632dd",
+            "8319166375e0e83d"
+        ],
+        "x": 184,
+        "y": 619,
+        "w": 1172,
+        "h": 169.5
+    },
+    {
+        "id": "263a35e9d3ccb67a",
+        "type": "group",
+        "z": "a0c34420c9f8488f",
+        "name": "ALL DATA VISION AND DATA MACHINE MONITOR",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffbfbf",
+            "color": "#000000"
+        },
+        "nodes": [
+            "f29d2d4edc63a2a5",
+            "63d93d73b67b1246",
+            "c33d878df7a29849",
+            "662181a91ed08a67",
+            "5383c0c2470d3efb",
+            "b0ba809c050c3b4e",
+            "1e8471caf5224a92"
+        ],
+        "x": 194,
+        "y": 159,
+        "w": 1112,
+        "h": 142
+    },
+    {
+        "id": "81dc34ccd8282437",
+        "type": "ui_group",
+        "name": "Read/Write Config File",
+        "tab": "ae6982ba55ff757d",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a41ead46acea48fd",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "163.50.57.95",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ae6982ba55ff757d",
+        "type": "ui_tab",
+        "name": "System Config v5.0.1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "951e703ff5f257f9",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#d60000",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#d60000",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#d60000",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ff2323",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#d60000",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "bf770afa7f023b85",
+        "type": "ui_group",
+        "name": "OS config",
+        "tab": "ae6982ba55ff757d",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62c067b927348898",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "191.191.2.197",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "Totle-2nd-Mask",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "admin",
+        "userFieldType": "str",
+        "password": "Ab123456",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "0dbe12f21faa3f44",
+        "type": "ui_group",
+        "name": "Chart Monitor",
+        "tab": "ae6982ba55ff757d",
+        "order": 3,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1d8fc3202f79a5a0",
+        "type": "ui_spacer",
+        "z": "a0c34420c9f8488f",
+        "name": "spacer",
+        "group": "0dbe12f21faa3f44",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3bfc1309b7f37d28",
+        "type": "ui_spacer",
+        "z": "a0c34420c9f8488f",
+        "name": "spacer",
+        "group": "0dbe12f21faa3f44",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5049e7eacab467f4",
+        "type": "ui_spacer",
+        "z": "a0c34420c9f8488f",
+        "name": "spacer",
+        "group": "0dbe12f21faa3f44",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c2d2673dcab0d39a",
+        "type": "ui_spacer",
+        "z": "a0c34420c9f8488f",
+        "name": "spacer",
+        "group": "0dbe12f21faa3f44",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aba2b5bc81491050",
+        "type": "ui_spacer",
+        "z": "a0c34420c9f8488f",
+        "name": "spacer",
+        "group": "0dbe12f21faa3f44",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "262db0cfeaa844fb",
+        "type": "ui_spacer",
+        "z": "a0c34420c9f8488f",
+        "name": "spacer",
+        "group": "0dbe12f21faa3f44",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3b1c04a1a8d53d68",
+        "type": "ui_spacer",
+        "z": "a0c34420c9f8488f",
+        "name": "spacer",
+        "group": "0dbe12f21faa3f44",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "21f008deb3a55334",
+        "type": "ui_spacer",
+        "z": "a0c34420c9f8488f",
+        "name": "spacer",
+        "group": "0dbe12f21faa3f44",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fbf758007d482aaf",
+        "type": "modbus-client",
+        "name": "Modbus 2M-09",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.220",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": "",
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "67942fb7d1f4a0bd",
+        "type": "postgresDB",
+        "name": "admin@191.191.2.197:5432/Totle-2nd-Mask",
+        "host": "191.191.2.197",
+        "port": "5432",
+        "database": "Totle-2nd-Mask",
+        "ssl": false,
+        "max": "10",
+        "min": 1,
+        "idle": "1000"
+    },
+    {
+        "id": "d25ddfbb37f9719b",
+        "type": "join",
+        "z": "a0c34420c9f8488f",
+        "g": "3f8ad1f7b530d82c",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\",\"",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "fbb3ed801cc6c60c"
+            ]
+        ]
+    },
+    {
+        "id": "f59236394fe7dc24",
+        "type": "split",
+        "z": "a0c34420c9f8488f",
+        "g": "3f8ad1f7b530d82c",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "d25ddfbb37f9719b"
+            ]
+        ]
+    },
+    {
+        "id": "0f8072a331e35287",
+        "type": "tcp in",
+        "z": "a0c34420c9f8488f",
+        "g": "3f8ad1f7b530d82c",
+        "name": "",
+        "server": "client",
+        "host": "192.168.2.16",
+        "port": "8500",
+        "datamode": "stream",
+        "datatype": "utf8",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "f59236394fe7dc24"
+            ]
+        ]
+    },
+    {
+        "id": "078a5b634f9f2985",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "3f8ad1f7b530d82c",
+        "name": "debug 33",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c0373cc94a0efc35",
+        "type": "modbus-read",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "Lot no",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "0",
+        "quantity": "5",
+        "rate": "6",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "fbf758007d482aaf",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "e0ee1c95edac6b27",
+                "5cd7c1146b73a84f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5cd7c1146b73a84f",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "convert PLC value to ASCII",
+        "func": "let length = msg.payload.length\nlet array = []\nlet array2 = []\n//set static length\nmsg.qty = 9\n\nfor (var i = 0; i < length; i++) {\n    array[i] = msg.payload[i].toString(16); //..\n    var hex = array[i].toString();\n    var str = '';\n    for (var n = 0; n < hex.length; n += 2) {\n        str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));\n        str = str.split(\"\").reverse().join(\"\")\n        array2[i] = str;\n    }\n}\n\nlet findata = array2.join(\"\").slice(0, msg.qty);\nfindata = String(findata).trim()\nmsg.payload = findata\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 380,
+        "wires": [
+            [
+                "63fdaa40347505d5",
+                "2266034f090b0505"
+            ]
+        ]
+    },
+    {
+        "id": "e0ee1c95edac6b27",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "debug 36",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 360,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e4237290b354ea44",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "debug 37",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 680,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "c6c0321ef7dd9c6a",
+        "type": "modbus-read",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "Part name",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "5",
+        "quantity": "13",
+        "rate": "6",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "fbf758007d482aaf",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "e4c33e98fcfaa687",
+                "4da2d6ce993cb2b5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4da2d6ce993cb2b5",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "convert PLC value to ASCII",
+        "func": "let length = msg.payload.length\nlet array = []\nlet array2 = []\n//set static length\nmsg.qty = 23\n\nfor (var i = 0; i < length; i++) {\n    array[i] = msg.payload[i].toString(16); //..\n    var hex = array[i].toString();\n    var str = '';\n    for (var n = 0; n < hex.length; n += 2) {\n        str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));\n        str = str.split(\"\").reverse().join(\"\")\n        array2[i] = str;\n    }\n}\n\nlet findata = array2.join(\"\").slice(0, msg.qty);\nfindata = String(findata).trim()\nmsg.payload = findata\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "e4237290b354ea44",
+                "8ef049f4041f8930"
+            ]
+        ]
+    },
+    {
+        "id": "e4c33e98fcfaa687",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "debug 38",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 360,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a5bdd4e7a0d4b238",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "name": "Convert PLC-Val. (32bit) to Int (Dec)",
+        "func": "// [65535, 551] = value from modbus 32Bit_Int(2word) \n// truevalue = 36175872 \nmsg.payload = [65535, 551] //Example \n\nvar value = (msg.payload)[0];\nvar stack = (msg.payload)[1];\nvar truevalue;\nmsg.decimal = 0\n\nif(value == 65535 && stack ==65535)\n{\n    truevalue = 0\n}\nelse\n{\n    truevalue = (1+value+((2**16)*(stack)))/(10**(msg.decimal));\n}\n\nmsg.payload = truevalue\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 1180,
+        "wires": [
+            [
+                "bcb7e26236c9ab67"
+            ]
+        ],
+        "icon": "node-red-contrib-modbus/modbus-icon.png"
+    },
+    {
+        "id": "140c8d69d5807040",
+        "type": "inject",
+        "z": "a0c34420c9f8488f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[65535,551]",
+        "payloadType": "str",
+        "x": 370,
+        "y": 1180,
+        "wires": [
+            [
+                "a5bdd4e7a0d4b238"
+            ]
+        ]
+    },
+    {
+        "id": "bcb7e26236c9ab67",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "name": "debug 39",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "2266034f090b0505",
+        "type": "change",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "lot",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 380,
+        "wires": [
+            [
+                "1bd0c124d96c7189"
+            ]
+        ]
+    },
+    {
+        "id": "b83748829308f9d3",
+        "type": "change",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "partname",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 500,
+        "wires": [
+            [
+                "6c370482e12a9285"
+            ]
+        ]
+    },
+    {
+        "id": "f29d2d4edc63a2a5",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "263a35e9d3ccb67a",
+        "name": "import Array",
+        "func": "var lot = flow.get('lot')\nvar data = flow.get('data')\nmsg.payload =  data +','+ lot\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "662181a91ed08a67"
+            ]
+        ]
+    },
+    {
+        "id": "63d93d73b67b1246",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "263a35e9d3ccb67a",
+        "name": "debug 40",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c33d878df7a29849",
+        "type": "join",
+        "z": "a0c34420c9f8488f",
+        "g": "263a35e9d3ccb67a",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\",\"",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 590,
+        "y": 260,
+        "wires": [
+            [
+                "b0ba809c050c3b4e"
+            ]
+        ]
+    },
+    {
+        "id": "662181a91ed08a67",
+        "type": "split",
+        "z": "a0c34420c9f8488f",
+        "g": "263a35e9d3ccb67a",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "c33d878df7a29849"
+            ]
+        ]
+    },
+    {
+        "id": "826430ae5375cea4",
+        "type": "change",
+        "z": "a0c34420c9f8488f",
+        "g": "3f8ad1f7b530d82c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "data",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 80,
+        "wires": [
+            [
+                "078a5b634f9f2985",
+                "f29d2d4edc63a2a5"
+            ]
+        ]
+    },
+    {
+        "id": "5383c0c2470d3efb",
+        "type": "postgresql",
+        "z": "a0c34420c9f8488f",
+        "g": "263a35e9d3ccb67a",
+        "name": "",
+        "query": "INSERT INTO twomask_cpk(front_pos, front_width, back_pos, back_width, lot) \n    VALUES ($1, $2, $3, $4, $5)\n    ",
+        "postgreSQLConfig": "62c067b927348898",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1010,
+        "y": 260,
+        "wires": [
+            [
+                "63d93d73b67b1246"
+            ]
+        ]
+    },
+    {
+        "id": "b0ba809c050c3b4e",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "263a35e9d3ccb67a",
+        "name": "Set Array to Database",
+        "func": "var test = msg.payload;\nvar front_pos = test['0'];\nvar front_width = test['1'];\nvar back_pos = test['2'];\nvar back_width = test['3'];\nvar lot = test['4']\n\n\n// var back_width = back.trim()\n\n// msg.payload = back_width\n\n\n\nmsg.params = [front_pos, front_width, back_pos, back_width, lot]\nreturn msg\n\n// msg.payload = \n//     msg.payload['0'] +\",\"+\n//     msg.payload['1']+\",\"+\n//     msg.payload['2'] + \",\" +\n//     msg.payload['3']\n// return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 260,
+        "wires": [
+            [
+                "1e8471caf5224a92",
+                "5383c0c2470d3efb"
+            ]
+        ]
+    },
+    {
+        "id": "1e8471caf5224a92",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "263a35e9d3ccb67a",
+        "name": "debug 42",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "21b26fbf354632dd",
+        "type": "template",
+        "z": "a0c34420c9f8488f",
+        "g": "5a645172926914f1",
+        "name": "Code CaLcuulate",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "plain",
+        "template": "import pandas as pd\nimport numpy as np\nimport psycopg2\nfrom datetime import datetime\nimport time\n\n#-----------------------------------SELECT DATABASE ---------------------------------#\n\nconnection = psycopg2.connect(user=\"admin\",\n                              password=\"Ab123456\",\n                              host=\"191.191.2.197\",\n                              port=\"5432\",\n                              database=\"Totle-2nd-Mask\")\nprint(\"connect MySQL\")\n\n#------------------------- select Database to lot_partname---------------------------#\n\nData_Lot_Partname = connection.cursor()\nData_Lot_Partname.execute(\"select * from lot_partname;\")\n\ndataLP = Data_Lot_Partname.fetchall()\n\nlp = pd.DataFrame(dataLP)\n\nlp.drop([0], axis=1, inplace=True)\n\nlp.to_csv(\"data_CPK.csv\",index=False)\n\nLP = pd.read_csv(\"data_CPK.csv\",index_col=False)\n\nLP.reset_index(drop=True)\n\nx = LP['1']\nX = np.array(x)\nLot = X[0]\n\ny = LP['2']\nY = np.array(y)\nPartname = Y[0]\n\n#-------------------------------------------------------------------------------------#\n\n\n#----------------------------select Database to twomask_cpk----------------------------#\n\nData_twomask_cpk = connection.cursor()\n\nData_twomask_cpk.execute(\"select * from twomask_cpk;\")\n\nrecords = Data_twomask_cpk.fetchall()\n\ndf = pd.DataFrame(records)\n\ndf.drop([0], axis=1, inplace=True)\n\ndf.to_csv(\"twomask_CPK.csv\",index=False)\n\nrd = pd.read_csv(\"twomask_CPK.csv\",index_col=False)\n\nrd.reset_index(drop=True)\n\nrd = rd.loc[rd['5'] == Lot]\n\nrd.to_csv(f\"\"\"twomask_CPK_{Lot}_{Partname}.csv\"\"\",index=False)\n\n#---------------------------------------------------------------------------------------#\n\n#-------------------------------- USL-LSL DATA -----------------------------------------#\n\nul = pd.read_csv(\"spec_2m.csv\",index_col=False)\nul.reset_index(drop=True)\nul = ul.loc[ul['Partname'] == Partname]\n\nx1 = ul['min_P']\nx2 = ul['max_P']\nx3 = ul['min_W']\nx4 = ul['max_W']\nx5 = ul['Partname']\n\nX11 = np.array(x1)\nX12 = np.array(x2)\nX13 = np.array(x3)\nX14 = np.array(x4)\nX15 = np.array(x5)\n\nmin_P = X11[0]\nmax_P = X12[0]\nmin_W = X13[0]\nmax_W = X14[0]\nPartnameTB = X15[0]\n\nLSL_P = min_P\nUSL_P = max_P\n\nLSL_W = min_W\nUSL_W = max_W\n\n#---------------------------------------------------------------------------------------#\n\n#------------------------------------ Calculate CPK ------------------------------------# \ndef Cpk(mylist, usl, lsl):\n        arr = np.array(mylist)\n        arr = arr.astype(np.float64)\n        arr = arr[~np.isnan(arr)]\n        arr = arr.ravel()\n        sigma = np.std(arr)\n        m = np.mean(arr)\n        Cpu = float(usl - m) / (3 * sigma)\n        Cpl = float(m - lsl) / (3 * sigma)\n        Cpk = np.min([Cpu, Cpl])\n        # print('LSL',lsl)\n        # print('USL',usl)\n        return Cpk\n\nCpk_front_pos = Cpk(rd[\"1\"],USL_P,LSL_P)\nCpk_front_width = Cpk(rd[\"2\"],USL_W,LSL_W)\nCpk_back_pos = Cpk(rd[\"3\"],USL_P,LSL_P)\nCpk_back_width = Cpk(rd[\"4\"],USL_W,LSL_W)\n\ndatacpk_front_pos = '%.3f'%(Cpk_front_pos)\ndatacpk_front_width = '%.3f'%(Cpk_front_width)\ndatacpk_back_pos = '%.3f'%(Cpk_back_pos)\ndatacpk_back_width = '%.3f'%(Cpk_back_width)\n\n# print('Cpk-front_pos   >>>',datacpk_front_pos)\n# print('Cpk-front_width >>>',datacpk_front_width)\n# print('Cpk-back_pos    >>>',datacpk_back_pos)\n# print('Cpk-back_width  >>>',datacpk_back_width)\n# print('Lot production',Lot)\n# print('Pratname production',Partname)\n\n#--------------------------------------------------------------------------------------#\n\ndt = datetime.now()\n\nts =datetime.timestamp(dt)\n\ndate_time = datetime.fromtimestamp(ts)\n\ntimes = date_time.strftime(\"%d-%m-%Y  %H:%M:%S\")\n\n# print(\"date and time is :\",dt)\n# print(\"Result 1:\", times)\n#--------------------------------------------------------------------------------------#\n\n#----------------------------------- INSERT TO DATABASE -------------------------------#\ncursor = connection.cursor()\n\na = \"INSERT INTO cpk_data(cpk_front_pos, cpk_front_width,cpk_back_pos, cpk_back_width, lot, partname, times) VALUES (%s, %s, %s, %s, %s, %s, %s)\"\nb = (datacpk_front_pos, datacpk_front_width, datacpk_back_pos, datacpk_back_width, Lot, Partname,times)\n\nempty_array = datacpk_front_pos\n\ndef is_empty_with_operation_not():\n    if empty_array:\n        print('INSERT ')\n        con.execute(a,b)\n        connection.commit()\n        return True\n    return False\n\nsta = time.time()\nid_empty = is_empty_with_operation_not()\nsto = time.time()\nprint(\"11%.8f sec.\"%(sto - sta))\nconnection.close()\n\nprint(\"INSERT INTO SUBMIT MY DATABASE PG ADMIN\")\n\n#----------------------------------------------------------------------------------------#\n",
+        "output": "str",
+        "x": 300,
+        "y": 740,
+        "wires": [
+            [
+                "4398926dbdc16874"
+            ]
+        ]
+    },
+    {
+        "id": "4398926dbdc16874",
+        "type": "file",
+        "z": "a0c34420c9f8488f",
+        "g": "5a645172926914f1",
+        "name": "",
+        "filename": "file_name.py",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 455,
+        "y": 740,
+        "wires": [
+            [
+                "794aecd6e60d51a0"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "794aecd6e60d51a0",
+        "type": "exec",
+        "z": "a0c34420c9f8488f",
+        "g": "5a645172926914f1",
+        "command": "python3 file_name.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 545,
+        "y": 740,
+        "wires": [
+            [
+                "cb0dc95afcd8e5f4"
+            ],
+            [],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "5fd14be9039dd847",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "5a645172926914f1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 890,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "cb0dc95afcd8e5f4",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "5a645172926914f1",
+        "name": "",
+        "func": "msg.payload = msg.payload.trim();\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 720,
+        "wires": [
+            [
+                "5fd14be9039dd847",
+                "8319166375e0e83d"
+            ]
+        ]
+    },
+    {
+        "id": "63fdaa40347505d5",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "debug 46",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 680,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3f526f1544ca2ece",
+        "type": "postgresql",
+        "z": "a0c34420c9f8488f",
+        "g": "5a645172926914f1",
+        "name": "",
+        "query": "update lot_partname set lot = $2, partname = $3\n  where id_on = $1",
+        "postgreSQLConfig": "62c067b927348898",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1100,
+        "y": 720,
+        "wires": [
+            [
+                "61d360ede71c8fd7"
+            ]
+        ]
+    },
+    {
+        "id": "61d360ede71c8fd7",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "5a645172926914f1",
+        "name": "debug 47",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "8319166375e0e83d",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "5a645172926914f1",
+        "name": "INSERT Lot-Partname",
+        "func": "var id_on = 3\nvar lot = flow.get(\"lot\")\nvar partname = flow.get(\"partname\")\n\nmsg.params = [id_on, lot, partname]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 720,
+        "wires": [
+            [
+                "3f526f1544ca2ece"
+            ]
+        ]
+    },
+    {
+        "id": "0e07b0fad5694ac3",
+        "type": "postgresql",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "",
+        "query": "SELECT * FROM lot_partname;",
+        "postgreSQLConfig": "62c067b927348898",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 350,
+        "y": 920,
+        "wires": [
+            [
+                "578ab7e924c9df2e",
+                "455cf7a83418cc0f"
+            ]
+        ]
+    },
+    {
+        "id": "ce2a73423d7e2629",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "function 4",
+        "func": "var data = msg.payload;\nvar id = data['0'];\nvar lot = data['5'];\nvar partname = data['9'];\nmsg.payload = lot;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 860,
+        "wires": [
+            [
+                "f27d5b723d51c608"
+            ]
+        ]
+    },
+    {
+        "id": "578ab7e924c9df2e",
+        "type": "json",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 530,
+        "y": 920,
+        "wires": [
+            [
+                "7545dfe3c7a56d76",
+                "bf770182a35fa33b"
+            ]
+        ]
+    },
+    {
+        "id": "236bf299b9e680fa",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "debug 49",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 880,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "7545dfe3c7a56d76",
+        "type": "split",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "",
+        "splt": "\"",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 710,
+        "y": 920,
+        "wires": [
+            [
+                "236bf299b9e680fa",
+                "43e45d0ab26b49bd"
+            ]
+        ]
+    },
+    {
+        "id": "43e45d0ab26b49bd",
+        "type": "join",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 890,
+        "y": 920,
+        "wires": [
+            [
+                "ce2a73423d7e2629",
+                "8b4b352fd73edf74"
+            ]
+        ]
+    },
+    {
+        "id": "f27d5b723d51c608",
+        "type": "change",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dataLot",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b4b352fd73edf74",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "function 5",
+        "func": "var data = msg.payload;\nvar id = data['0'];\nvar lot = data['5'];\nvar partname = data['9'];\nmsg.payload = partname;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 920,
+        "wires": [
+            [
+                "119eea5c949a6cf4"
+            ]
+        ]
+    },
+    {
+        "id": "119eea5c949a6cf4",
+        "type": "change",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dataPartname",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32a1131ec020d122",
+        "type": "inject",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "4",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 215,
+        "y": 920,
+        "wires": [
+            [
+                "0e07b0fad5694ac3"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "1bd0c124d96c7189",
+        "type": "switch",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "dataLot",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1090,
+        "y": 380,
+        "wires": [
+            [
+                "3c7512970c06e773",
+                "f2959fa0c16503a8"
+            ]
+        ]
+    },
+    {
+        "id": "6c370482e12a9285",
+        "type": "switch",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "",
+        "property": "partname",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "dataPartname",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1090,
+        "y": 500,
+        "wires": [
+            [
+                "f2959fa0c16503a8",
+                "3c7512970c06e773"
+            ]
+        ]
+    },
+    {
+        "id": "3c7512970c06e773",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "debug 51",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "f2959fa0c16503a8",
+        "type": "delay",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1320,
+        "y": 480,
+        "wires": [
+            [
+                "21b26fbf354632dd"
+            ]
+        ]
+    },
+    {
+        "id": "455cf7a83418cc0f",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "debug 52",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 540,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "bf770182a35fa33b",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "g": "742f18b7e61775ac",
+        "name": "debug 50",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "fbb3ed801cc6c60c",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "3f8ad1f7b530d82c",
+        "name": "function 6",
+        "func": "var test = msg.payload;\n\nvar fp = test['0']\nvar fw = test['1']\nvar bp = test['2']\nvar bw = test['3']\n\nvar bbw = bw.trim()\n\nvar b_w = bbw.substring(0, 5)\n\nmsg.payload = [fp, fw, bp, b_w]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 80,
+        "wires": [
+            [
+                "826430ae5375cea4"
+            ]
+        ]
+    },
+    {
+        "id": "8ef049f4041f8930",
+        "type": "function",
+        "z": "a0c34420c9f8488f",
+        "g": "21b39faf1b274f51",
+        "name": "Length Partname",
+        "func": "var text = msg.payload;\n\nif (text.length == 23){\n    msg.payload;\n    return msg;\n}\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 500,
+        "wires": [
+            [
+                "b83748829308f9d3"
+            ]
+        ]
+    },
+    {
+        "id": "5553c1fe832a84fd",
+        "type": "inject",
+        "z": "a0c34420c9f8488f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1234567890123",
+        "payloadType": "str",
+        "x": 340,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b2f0103ee9e8744",
+        "type": "debug",
+        "z": "a0c34420c9f8488f",
+        "name": "debug 53",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "06c13684ae145e52",
+        "type": "inject",
+        "z": "a0c34420c9f8488f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "123456789012",
+        "payloadType": "str",
+        "x": 340,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8172f299df3e1f04",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Get time",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "047b2a0430f3ea91"
+            ]
+        ]
+    },
+    {
+        "id": "b03b4a8c9e86e194",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 880,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "047b2a0430f3ea91",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "get date ",
+        "func": "const d = new Date();\nvar d1 = String(d.toISOString()).split(\"T\")\nvar date =  d1[0]\n\n\nmsg.payload = date\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "6fa4a3146dc73d1f"
+            ]
+        ]
+    },
+    {
+        "id": "17a166d1c8a42228",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 500,
+        "wires": [
+            [
+                "f42e19a6452e9d18"
+            ]
+        ]
+    },
+    {
+        "id": "9bd57c2e6f3a04d5",
+        "type": "file in",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "ipAddr read config",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 610,
+        "y": 500,
+        "wires": [
+            [
+                "c3eb3c068a1fee4e",
+                "8ea3de26ba43213f"
+            ]
+        ]
+    },
+    {
+        "id": "70ab1b90bd20c56d",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 900,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "d0aa847390952753",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "fetch value",
+        "func": "var fact = flow.get(\"ipaddr-factory\")\nvar dept = flow.get(\"ipaddr-department\")\nvar modn = flow.get(\"ipaddr-modulename\")\nvar mcno = flow.get(\"ipaddr-mcno\")\nvar dver = flow.get(\"ipaddr-version\")\nvar iotid = flow.get(\"ipaddr-iotid\")\n\n\nmsg.payload = \"factory\" + \",\" +     fact + \",\" +\n    \"department\" + \",\" +            dept + \",\" +\n    \"modulename\" + \",\" +            modn + \",\" +\n    \"mcno\" + \",\" +                  mcno + \",\" +\n    \"version\" + \",\" +               dver + \",\" +\n    \"iot_id\" + \",\" +               iotid \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 620,
+        "wires": [
+            [
+                "921627cbe476fd14"
+            ]
+        ]
+    },
+    {
+        "id": "e9c53fb9c5d074f8",
+        "type": "file",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "ipAddr write config",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 710,
+        "y": 620,
+        "wires": [
+            [
+                "70ab1b90bd20c56d"
+            ]
+        ]
+    },
+    {
+        "id": "c3eb3c068a1fee4e",
+        "type": "split",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 745,
+        "y": 500,
+        "wires": [
+            [
+                "e1e365738502dec7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e1e365738502dec7",
+        "type": "join",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 795,
+        "y": 500,
+        "wires": [
+            [
+                "48c9b0f42abaded7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "48c9b0f42abaded7",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "fetch value",
+        "func": "flow.set(\"ipaddr-factory\",msg.payload[1])\nflow.set(\"ipaddr-department\", msg.payload[3])\nflow.set(\"ipaddr-modulename\", msg.payload[5])\nflow.set(\"ipaddr-mcno\", msg.payload[7])\nflow.set(\"ipaddr-version\", msg.payload[9])\nflow.set(\"ipaddr-iotid\", msg.payload[11])\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 500,
+        "wires": [
+            [
+                "70ab1b90bd20c56d",
+                "9f90ef8b5613788f",
+                "41be6fa10d7b9f52",
+                "4ae64e82d17d64ea",
+                "e48643b4e53d1e6b",
+                "ff9cccabe237989c",
+                "05bb5cdf835917d6"
+            ]
+        ]
+    },
+    {
+        "id": "16548521eb5be343",
+        "type": "ui_text_input",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "label": "Factory",
+        "tooltip": "",
+        "group": "81dc34ccd8282437",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1180,
+        "y": 840,
+        "wires": [
+            [
+                "2612dfb1f069b99b"
+            ]
+        ]
+    },
+    {
+        "id": "3b55025a7e82bcea",
+        "type": "ui_text_input",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "label": "Department",
+        "tooltip": "",
+        "group": "81dc34ccd8282437",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 900,
+        "wires": [
+            [
+                "f5a220e2cc27a8ed"
+            ]
+        ]
+    },
+    {
+        "id": "5fa0bf33c2118a61",
+        "type": "ui_text_input",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "label": "Module name",
+        "tooltip": "",
+        "group": "81dc34ccd8282437",
+        "order": 6,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1200,
+        "y": 960,
+        "wires": [
+            [
+                "cd95810b0cf630f8"
+            ]
+        ]
+    },
+    {
+        "id": "f478bc538126a28b",
+        "type": "ui_text_input",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "label": "Machine No.",
+        "tooltip": "",
+        "group": "81dc34ccd8282437",
+        "order": 8,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 1020,
+        "wires": [
+            [
+                "c9d940a847fa3b6e"
+            ]
+        ]
+    },
+    {
+        "id": "6fa4a3146dc73d1f",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipaddr-version",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "b03b4a8c9e86e194",
+                "37a4157d436f0adb"
+            ]
+        ]
+    },
+    {
+        "id": "2612dfb1f069b99b",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipaddr-factory",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1500,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5a220e2cc27a8ed",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipaddr-department",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1520,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd95810b0cf630f8",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipaddr-modulename",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1520,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c9d940a847fa3b6e",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipaddr-mcno",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1500,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d346936079c95811",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "81dc34ccd8282437",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Factory",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1460,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9f90ef8b5613788f",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ipaddr-factory",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1135,
+        "y": 480,
+        "wires": [
+            [
+                "d346936079c95811",
+                "16548521eb5be343"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f80443969c71b212",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "81dc34ccd8282437",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Department",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "c0c6739a0e549c01",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "81dc34ccd8282437",
+        "order": 5,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "module name",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1480,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "0b3007ec1707bd2a",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "81dc34ccd8282437",
+        "order": 7,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Machine No.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "24c568007f334ce6",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "81dc34ccd8282437",
+        "order": 9,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Version",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1460,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "41be6fa10d7b9f52",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ipaddr-department",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1135,
+        "y": 540,
+        "wires": [
+            [
+                "f80443969c71b212",
+                "3b55025a7e82bcea"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "4ae64e82d17d64ea",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ipaddr-modulename",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1135,
+        "y": 600,
+        "wires": [
+            [
+                "c0c6739a0e549c01",
+                "5fa0bf33c2118a61"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e48643b4e53d1e6b",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ipaddr-mcno",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1135,
+        "y": 660,
+        "wires": [
+            [
+                "0b3007ec1707bd2a",
+                "f478bc538126a28b"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ff9cccabe237989c",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ipaddr-version",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1135,
+        "y": 720,
+        "wires": [
+            [
+                "24c568007f334ce6"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "709e865ebf23cf25",
+        "type": "ui_button",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "group": "81dc34ccd8282437",
+        "order": 13,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": ">> Read config file <<",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 560,
+        "wires": [
+            [
+                "f42e19a6452e9d18"
+            ]
+        ]
+    },
+    {
+        "id": "2511d9e53e132b64",
+        "type": "ui_button",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "group": "81dc34ccd8282437",
+        "order": 14,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": ">> Write config file <<",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 680,
+        "wires": [
+            [
+                "d0aa847390952753",
+                "fa5324a67aa0e0db"
+            ]
+        ]
+    },
+    {
+        "id": "37a4157d436f0adb",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "81dc34ccd8282437",
+        "order": 12,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Version",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1100,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ced0db823a1cc564",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "fetch value",
+        "func": "var fact = flow.get(\"ipaddr-factory\")\nvar dept = flow.get(\"ipaddr-department\")\nvar modn = flow.get(\"ipaddr-modulename\")\nvar mcno = flow.get(\"ipaddr-mcno\")\nvar dver = flow.get(\"ipaddr-version\")\nvar ip = flow.get(\"ipaddr-ip\")\n\n\n\nmsg.payload =    fact  + \"_\" \n    + dept + \"_\" \n    + modn + \"_\" \n    + mcno + \"_\" \n    + dver + \": \"  + ip\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 740,
+        "wires": [
+            [
+                "7e78aa9bdeecf8ed",
+                "452858c48be6d940"
+            ]
+        ]
+    },
+    {
+        "id": "af797e2d57a01f6b",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Send IP",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 180,
+        "y": 740,
+        "wires": [
+            [
+                "ced0db823a1cc564"
+            ]
+        ]
+    },
+    {
+        "id": "7e78aa9bdeecf8ed",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 13",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 600,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "e3ab6076f3f09176",
+        "type": "ping",
+        "z": "6f7d57e6ee4e2c12",
+        "protocol": "IPv4",
+        "mode": "timed",
+        "name": "",
+        "host": "163.50.57.98",
+        "timer": "30",
+        "inputs": 0,
+        "x": 130,
+        "y": 900,
+        "wires": [
+            [
+                "b6c30e103f0fe457"
+            ]
+        ]
+    },
+    {
+        "id": "12551b058d8f3dbb",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 480,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "b6c30e103f0fe457",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Reconncet Fnc.",
+        "func": "global.set(\"pingms\",msg.payload)\nmsg.payload=msg.payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 275,
+        "y": 900,
+        "wires": [
+            [
+                "12551b058d8f3dbb",
+                "74d898484e9822e9"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ae925af30cab29d5",
+        "type": "exec",
+        "z": "6f7d57e6ee4e2c12",
+        "command": "echo orangepi | sudo -S nmcli dev wifi connect ssid-th1900 password nextgen2019",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 435,
+        "y": 960,
+        "wires": [
+            [
+                "4992853c66d73e48"
+            ],
+            [
+                "4992853c66d73e48"
+            ],
+            [
+                "4992853c66d73e48"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "4992853c66d73e48",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 620,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "74d898484e9822e9",
+        "type": "switch",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "istype",
+                "v": "number",
+                "vt": "number"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 275,
+        "y": 960,
+        "wires": [
+            [
+                "b407f751e5b209c3",
+                "ae925af30cab29d5"
+            ],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "91cfbfbddb1fbf2a",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 17",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload.internalIPv4",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 880,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7bc0d2406d39a261",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipaddr-ip",
+                "pt": "flow",
+                "to": "payload.internalIPv4",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 420,
+        "wires": [
+            [
+                "91cfbfbddb1fbf2a"
+            ]
+        ]
+    },
+    {
+        "id": "8d44deb0343e0c8d",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Get IPv4",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "20159dbd5aec96f2"
+            ]
+        ]
+    },
+    {
+        "id": "8e9a6103ac715573",
+        "type": "file",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "ERR LOG",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 760,
+        "y": 1020,
+        "wires": [
+            [
+                "544771f2017ace80"
+            ]
+        ]
+    },
+    {
+        "id": "b407f751e5b209c3",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "log err",
+        "func": "const d = new Date();\nlet unix_timestamp = d.getTime();\n//var date = new Date(unix_timestamp * 1000);\nvar date = new Date(unix_timestamp);\nvar hours = date.getHours();\nvar minutes = \"0\" + date.getMinutes();\nvar seconds = \"0\" + date.getSeconds();\nvar formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);\n\nvar timenow = formattedTime\n\nconst myTimeZone = 7; // my timeZone \ndate.setTime(date.getTime() + myTimeZone * 60 * 60 * 1000);\n\nvar datenow = date.toISOString()\n\nmsg.payload = datenow + \" : Connection Lost\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1020,
+        "wires": [
+            [
+                "8c972fa26134285d"
+            ]
+        ]
+    },
+    {
+        "id": "544771f2017ace80",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 18",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 900,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "46df99f73642e689",
+        "type": "comment",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Reconnect WiFi auto",
+        "info": "",
+        "x": 150,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "f576c65a31a2a6f2",
+        "type": "ui_text_input",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "label": "IoT_ID",
+        "tooltip": "",
+        "group": "81dc34ccd8282437",
+        "order": 10,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1170,
+        "y": 1080,
+        "wires": [
+            [
+                "ab44540c595d4f3e"
+            ]
+        ]
+    },
+    {
+        "id": "ab44540c595d4f3e",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipaddr-iotid",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fdbc53a55d4293ec",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "81dc34ccd8282437",
+        "order": 11,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "IoT-ID",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1450,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "05bb5cdf835917d6",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ipaddr-iotid",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1135,
+        "y": 780,
+        "wires": [
+            [
+                "fdbc53a55d4293ec",
+                "f576c65a31a2a6f2"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "452858c48be6d940",
+        "type": "mqtt out",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "topic": "ipAddr/Rasp/",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a41ead46acea48fd",
+        "x": 610,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "20159dbd5aec96f2",
+        "type": "ip",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "ip",
+        "https": false,
+        "timeout": "5000",
+        "internalIPv4": true,
+        "internalIPv6": false,
+        "publicIPv4": false,
+        "publicIPv6": false,
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "7bc0d2406d39a261"
+            ]
+        ]
+    },
+    {
+        "id": "fa5324a67aa0e0db",
+        "type": "delay",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 375,
+        "y": 680,
+        "wires": [
+            [
+                "f42e19a6452e9d18"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "fd5e8d6eaf949f44",
+        "type": "file in",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "ipAddr read config",
+        "filename": "/home/orangepi/ipAddr/config/config.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 170,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6663eeffdb68e36",
+        "type": "file",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "ipAddr write config",
+        "filename": "/home/orangepi/ipAddr/config/config.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 170,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca81be2b42109d80",
+        "type": "file",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "ERR LOG",
+        "filename": "/home/orangepi/ipAddr/log_err.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 140,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "00e6e41791b3040b",
+        "type": "ui_dropdown",
+        "z": "6f7d57e6ee4e2c12",
+        "d": true,
+        "name": "",
+        "label": "Select path setting",
+        "tooltip": "",
+        "place": "Select your OS",
+        "group": "bf770afa7f023b85",
+        "order": 4,
+        "width": 24,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Window",
+                "value": "win10",
+                "type": "str"
+            },
+            {
+                "label": "Orange Pi",
+                "value": "opi",
+                "type": "str"
+            },
+            {
+                "label": "Raspberry Pi",
+                "value": "rpi",
+                "type": "str"
+            },
+            {
+                "label": "Another OS",
+                "value": "another",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1150,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "082d7ce2d1296ef0",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipaddr-os",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "5b0c31909bd50b31"
+            ]
+        ]
+    },
+    {
+        "id": "5b0c31909bd50b31",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 19",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 500,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "961dd553c5da624e",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "another",
+        "payloadType": "str",
+        "x": 1120,
+        "y": 120,
+        "wires": [
+            [
+                "00e6e41791b3040b"
+            ]
+        ]
+    },
+    {
+        "id": "93741bccd20a9ca2",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "bf770afa7f023b85",
+        "order": 5,
+        "width": 24,
+        "height": 1,
+        "name": "",
+        "label": "Your OS",
+        "format": "{{msg.os}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 960,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1d88e6efaea49b1a",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ipaddr-os",
+        "payloadType": "flow",
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "98b54862c247b2eb"
+            ]
+        ]
+    },
+    {
+        "id": "98b54862c247b2eb",
+        "type": "switch",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "win10",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "opi",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "rpi",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "another",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 590,
+        "y": 240,
+        "wires": [
+            [
+                "e7ee63d5b1231912"
+            ],
+            [
+                "dfba9e146abfe013"
+            ],
+            [
+                "427ce64358948829"
+            ],
+            [
+                "cc65e565c4c372e9"
+            ]
+        ]
+    },
+    {
+        "id": "e7ee63d5b1231912",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "os",
+                "pt": "msg",
+                "to": "Window",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "C:\\IpAddr\\config\\",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "flow",
+                "to": "C:\\IpAddr\\config\\",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 745,
+        "y": 180,
+        "wires": [
+            [
+                "93741bccd20a9ca2",
+                "cb501bfdfd3ea818",
+                "5dfb354dca061eda"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "dfba9e146abfe013",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "os",
+                "pt": "msg",
+                "to": "Orange Pi",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "/home/orangepi/ipAddr/config",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "flow",
+                "to": "/home/orangepi/ipAddr/config",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 745,
+        "y": 220,
+        "wires": [
+            [
+                "93741bccd20a9ca2",
+                "cb501bfdfd3ea818",
+                "5dfb354dca061eda"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "427ce64358948829",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "os",
+                "pt": "msg",
+                "to": "Raspberry Pi",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "/home/pi/ipAddr/config",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "flow",
+                "to": "/home/pi/ipAddr/config",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 745,
+        "y": 260,
+        "wires": [
+            [
+                "93741bccd20a9ca2",
+                "cb501bfdfd3ea818",
+                "5dfb354dca061eda"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "cc65e565c4c372e9",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "os",
+                "pt": "msg",
+                "to": "Another OS",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "manualpath",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "flow",
+                "to": "manualpath",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 665,
+        "y": 320,
+        "wires": [
+            [
+                "93741bccd20a9ca2",
+                "cb501bfdfd3ea818",
+                "4070f7b51cfa3550"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "cb501bfdfd3ea818",
+        "type": "ui_text",
+        "z": "6f7d57e6ee4e2c12",
+        "group": "bf770afa7f023b85",
+        "order": 6,
+        "width": 24,
+        "height": 1,
+        "name": "",
+        "label": "Your Path",
+        "format": "{{msg.path}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 960,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "0d0561ebf0e309ba",
+        "type": "ui_text_input",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "manual set path",
+        "label": "<font size=3.5>***If you choose another path please set path here <<<</font>",
+        "tooltip": "",
+        "group": "bf770afa7f023b85",
+        "order": 7,
+        "width": 24,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 840,
+        "y": 60,
+        "wires": [
+            [
+                "43d9dd8fe69648e0"
+            ]
+        ]
+    },
+    {
+        "id": "43d9dd8fe69648e0",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "manualpath",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5dfb354dca061eda",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "path",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 665,
+        "y": 40,
+        "wires": [
+            [
+                "0d0561ebf0e309ba"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f42e19a6452e9d18",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Auto set path",
+        "func": "var path = flow.get(\"path\")\nvar os = flow.get(\"ipaddr-os\")\nif (os == \"win10\")\n{\n    msg.filename = path + \"config.csv\"\n}\nelse if (os != \"another\" && os != \"win10\")\n{\n    msg.filename = path + \"/config.csv\"\n}\nelse\n{\n    msg.filename = path\n}\nreturn msg; ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 500,
+        "wires": [
+            [
+                "9bd57c2e6f3a04d5",
+                "ca6613bc0091eb66"
+            ]
+        ]
+    },
+    {
+        "id": "ca6613bc0091eb66",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 20",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "filename",
+        "targetType": "msg",
+        "statusVal": "filename",
+        "statusType": "auto",
+        "x": 580,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4070f7b51cfa3550",
+        "type": "change",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Please set path!!!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 665,
+        "y": 80,
+        "wires": [
+            [
+                "0d0561ebf0e309ba"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "921627cbe476fd14",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Auto set path",
+        "func": "var path = flow.get(\"path\")\nvar os = flow.get(\"ipaddr-os\")\nif (os == \"win10\")\n{\n    msg.filename = path + \"config.csv\"\n}\nelse if (os != \"another\" && os != \"win10\")\n{\n    msg.filename = path + \"/config.csv\"\n}\nelse\n{\n    msg.filename = path\n}\nreturn msg; ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 620,
+        "wires": [
+            [
+                "e9c53fb9c5d074f8",
+                "60db5a7a1a9114f7"
+            ]
+        ]
+    },
+    {
+        "id": "8c972fa26134285d",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Auto set path",
+        "func": "var path = flow.get(\"path\")\nvar os = flow.get(\"ipaddr-os\")\nif (os == \"win10\")\n{\n    msg.filename = path + \"log_err.csv\"\n}\nelse if (os != \"another\" && os != \"win10\")\n{\n    msg.filename = path + \"/log_err.csv\"\n}\nelse\n{\n    msg.filename = path\n}\nreturn msg; ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1020,
+        "wires": [
+            [
+                "8e9a6103ac715573"
+            ]
+        ]
+    },
+    {
+        "id": "6bf83d2f1684b7bb",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Select OPI",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "opi",
+        "payloadType": "str",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "082d7ce2d1296ef0"
+            ]
+        ]
+    },
+    {
+        "id": "bd404fa5aed6e8a3",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Select RPI",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rpi",
+        "payloadType": "str",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3139ef469c692135",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Select Window",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "win10",
+        "payloadType": "str",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4b1810de56ca4ae",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Select Another OS",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "another",
+        "payloadType": "str",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd4ab183f0a9b997",
+        "type": "comment",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Connect the line with your OS",
+        "info": "",
+        "x": 180,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "8ea3de26ba43213f",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 21",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "0645e8eb3c1e5e31",
+        "type": "inject",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 570,
+        "y": 1260,
+        "wires": [
+            [
+                "937b33136f5a7c7b",
+                "92832eda26a95eaf",
+                "f98e3af47131dc59",
+                "2a789182136e9d25",
+                "34413c99cdb8ae50"
+            ]
+        ]
+    },
+    {
+        "id": "c9161b70613e9ae1",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "910818a95fb218a5",
+        "type": "json",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 815,
+        "y": 1260,
+        "wires": [
+            [
+                "8fbdc5e9bbf96a80"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "8fbdc5e9bbf96a80",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "func": "mem = msg.payload\nvar splitmem1 = Object.values(mem);\n\n\nvar splitmem2 = Object.values(splitmem1[2]);\nusemem = splitmem2[0]\nfreemem = splitmem2[1]\ntotal = usemem + freemem\nmsg.payload = 'Used Memory : ' +  usemem + ', Free Memory :' +  freemem\n\nglobal.set('totalmem',total)\nglobal.set('usemem',usemem)\nglobal.set('freemem',freemem)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 915,
+        "y": 1260,
+        "wires": [
+            [
+                "c9161b70613e9ae1"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b7e8bee752102b55",
+        "type": "comment",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Memory monitoring",
+        "info": "",
+        "x": 570,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "f98e3af47131dc59",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "func": "usemem = global.get('usemem') / 1000000\nmsg.payload = usemem.toLocaleString(undefined, {maximumFractionDigits: 2})\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 715,
+        "y": 1380,
+        "wires": [
+            [
+                "2756f9b967a498e8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "4d4c1bceee62cbd0",
+        "type": "function",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "func": "\nmsg.payload = msg.payload.toFixed(2)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 815,
+        "y": 1320,
+        "wires": [
+            [
+                "84b93ef60a0a916b",
+                "464be5fe81a961b0",
+                "2cc62749b5a66d96"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "464be5fe81a961b0",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 970,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "2756f9b967a498e8",
+        "type": "ui_gauge",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Memory Usage ",
+        "group": "bf770afa7f023b85",
+        "order": 2,
+        "width": 8,
+        "height": 4,
+        "gtype": "gage",
+        "title": "<font size=\"1\">Memory Usage </font>",
+        "label": "GB",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 815,
+        "y": 1380,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "84b93ef60a0a916b",
+        "type": "ui_gauge",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "Raspberry Pi Temp",
+        "group": "bf770afa7f023b85",
+        "order": 3,
+        "width": 8,
+        "height": 4,
+        "gtype": "gage",
+        "title": "<font size=\"1\">Orange Pi Temp</font>",
+        "label": "C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "120",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "45",
+        "seg2": "65",
+        "diff": false,
+        "className": "",
+        "x": 955,
+        "y": 1300,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "208b84ee14978fae",
+        "type": "ui_gauge",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "group": "bf770afa7f023b85",
+        "order": 1,
+        "width": 8,
+        "height": 4,
+        "gtype": "gage",
+        "title": "CPU Usage",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "81464992b9bc7cf9",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 22",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "937b33136f5a7c7b",
+        "type": "DeviceStats",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "mem": true,
+        "nw": false,
+        "load": false,
+        "hostname": false,
+        "useString": false,
+        "x": 715,
+        "y": 1260,
+        "wires": [
+            [
+                "910818a95fb218a5",
+                "30799124b0de7af5"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "34413c99cdb8ae50",
+        "type": "DeviceStats",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "mem": false,
+        "nw": true,
+        "load": false,
+        "hostname": false,
+        "useString": false,
+        "x": 715,
+        "y": 1440,
+        "wires": [
+            [
+                "81464992b9bc7cf9"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "92832eda26a95eaf",
+        "type": "cpu",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "msgCore": false,
+        "msgOverall": false,
+        "msgArray": false,
+        "msgTemp": true,
+        "x": 715,
+        "y": 1320,
+        "wires": [
+            [
+                "4d4c1bceee62cbd0"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2a789182136e9d25",
+        "type": "cpu",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "msgCore": false,
+        "msgOverall": true,
+        "msgArray": false,
+        "msgTemp": false,
+        "x": 705,
+        "y": 1520,
+        "wires": [
+            [
+                "208b84ee14978fae",
+                "0ab5e382acd39c54"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2cc62749b5a66d96",
+        "type": "ui_chart",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "group": "0dbe12f21faa3f44",
+        "order": 1,
+        "width": 23,
+        "height": 4,
+        "label": "CPU temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "18",
+        "ymax": "95",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2bff00",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1030,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60db5a7a1a9114f7",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "0ab5e382acd39c54",
+        "type": "ui_chart",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "",
+        "group": "0dbe12f21faa3f44",
+        "order": 6,
+        "width": 23,
+        "height": 4,
+        "label": "CPU Use",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2bff00",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30799124b0de7af5",
+        "type": "debug",
+        "z": "6f7d57e6ee4e2c12",
+        "name": "debug 32",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1220,
+        "wires": []
+    }
+]
