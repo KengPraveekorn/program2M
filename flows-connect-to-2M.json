@@ -1,0 +1,1 @@
+[{"id":"2cf36db17c347934","type":"inject","z":"b4c728f9b01e7a45","name":"Test send Lot","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"239PB0716","payloadType":"str","x":530,"y":320,"wires":[["71c484a7543c61c4"]]}]

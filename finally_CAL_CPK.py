@@ -8,7 +8,7 @@ import time
 
 connection = psycopg2.connect(user="admin",
                               password="Ab123456",
-                              host="191.191.2.197",
+                              host="10.53.8.7",
                               port="5432",
                               database="Totle-2nd-Mask")
 print("connect PostgreSQL")
@@ -112,6 +112,7 @@ def Cpk(mylist, usl, lsl):
         sigma = np.std(arr)
         m = np.mean(arr)
         # print('arr',usl)
+        print('arr',arr)
         Cpu = float(usl - m) / (3 * sigma)
         Cpl = float(m - lsl) / (3 * sigma)
         Cpk = np.min([Cpu, Cpl])
